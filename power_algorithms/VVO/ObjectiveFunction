@@ -1,0 +1,14 @@
+from enum import Enum
+
+class ObjFuncType(Enum):
+    ACTIVE_POWER_LOSSES = 1
+    POWER_FACTOR = 2
+    MV_VOLTAGE_DEVIATION = 3
+
+class ObjectiveFunction:
+    def __init__(self, type, limits):
+        self.type = type
+        self.limits = limits
+
+    def CalculateObjFunction(self):
+        pass
